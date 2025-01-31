@@ -8,41 +8,72 @@ other changes, to gain insights into user activity and content evolution while m
 Tables in the Dataset
 
 1. badges
+
 ○ Tracks badges earned by users.
+
 ○ Key Fields:
+
 ■ id, user_id, name (badge name), date (earned date).
+
 2. comments
+
 ○ Contains comments on posts.
+
 ○ Key Fields:
+
 ■ id, post_id, user_id, creation_date, text.
+
 3. post_history
+
 ○ Tracks the history of edits, comments, and other changes made to posts.
+
 ○ Key Fields:
-■ id, post_history_type_id, post_id, user_id, text,
-creation_date.
+
+■ id, post_history_type_id, post_id, user_id, text, creation_date.
+
 4. post_links
+
 ○ Links between related posts.
+
 ○ Key Fields:
+
 ■ id, post_id, related_post_id, link_type_id.
+
 5. posts_answers
+
 ○ Contains questions and answers.
+
 ○ Key Fields:
-■ id, post_type_id (question or answer), creation_date, score,
-view_count, owner_user_id.
+
+■ id, post_type_id (question or answer), creation_date, score, view_count, owner_user_id.
+
 6. tags
+
 ○ Information about tags associated with posts.
+
 ○ Key Fields:
+
 ■ id, tag_name.
+
 7. users
+
 ○ Details about Stack Overflow users.
+
 ○ Key Fields:
+
 ■ id, display_name, reputation, creation_date.
+
 8. votes
+
 ○ Tracks voting activity on posts.
+
 ○ Key Fields:
+
 ■ id, post_id, vote_type_id, creation_date.
+
 9. posts
-____________________________________________________________________________________________________________________________________________________________________
+
+___________________________________________________________________________________________________________________________________________________________________
 Tasks and Concepts
 Part 1: Basics
 1. Loading and Exploring Data

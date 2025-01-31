@@ -75,19 +75,28 @@ Tables in the Dataset
 
 ___________________________________________________________________________________________________________________________________________________________________
 Tasks and Concepts
+
 Part 1: Basics
+
 1. Loading and Exploring Data
+
 ○ Explore the structure and first 10 rows of each table.
+
 ○ Identify the total number of records in each table.
+
 2. Filtering and Sorting
+
 ○ Find all posts with a view_count greater than 100
-○ Display comments made in 2005, sorted by creation_date (comments
-table).
+
+○ Display comments made in 2005, sorted by creation_date (comments table).
+
 3. Simple Aggregations
+
 ○ Count the total number of badges (badges table).
-○ Calculate the average score of posts grouped by post_type_id
-(posts_answer table).
-____________________________________________________________________________________________________________________________________________________________________
+
+○ Calculate the average score of posts grouped by post_type_id (posts_answer table).
+___________________________________________________________________________________________________________________________________________________________________
+
 Part 2: Joins
 1. Basic Joins
 ○ Combine the post_history and posts tables to display the title of

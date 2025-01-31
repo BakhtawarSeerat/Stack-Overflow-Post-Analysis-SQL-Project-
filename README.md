@@ -1,11 +1,12 @@
-"Stack Overflow Post Analysis: A SQL Portfolio Project"
-Dataset:
-https://www.kaggle.com/datasets/stackoverflow/stackoverflow/data?select=post_history
-Project Objective
-The objective is to analyze the history of Stack Overflow posts, including edits, comments, and
-other changes, to gain insights into user activity and content evolution while mastering SQL
-skills.
+Project Title: "Stack Overflow Post Analysis: A SQL Portfolio Project"
+
+Dataset: https://www.kaggle.com/datasets/stackoverflow/stackoverflow/data?select=post_history
+
+Project Objective: The objective is to analyze the history of Stack Overflow posts, including edits, comments, and
+other changes, to gain insights into user activity and content evolution while mastering SQL skills.
+
 Tables in the Dataset
+
 1. badges
 ○ Tracks badges earned by users.
 ○ Key Fields:

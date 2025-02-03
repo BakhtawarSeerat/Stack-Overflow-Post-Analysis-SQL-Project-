@@ -388,16 +388,22 @@ select owner_user_id, rank() over(order by avg_score) as ranking from ct ;
 
 -- 2. Recursive CTE
 -- ○ Simulate a hierarchy of linked posts using the post_links table.
-with recursive R as (
-  select pp.post_id, pp.related_post_id, 1 as level
+with recursive heirarchy as (
+  -- anchor member
+  select pp.post_id, pp.related_post_id, 1 as level 
   from post_links pp
   union all
-  select pp.post_id, pp.related_post_id, level+1  as level 
-  from  post_links pp 
-  join R as hh
+  -- recursive member
+  select pp.post_id, pp.related_post_id, level+1  as level  
+  from  post_links pp
+  inner join heirarchy hh
   on pp.post_id=hh.related_post_id
+  WHERE hh.level < 10 -- termination condition to stop after 10 levels
 )
-select * from R;
+select * from heirarchy
+order by level;
+-- ___________________________________________________________________________________________________________________
+
 -- ___________________________________________________________________________________________________________________
 
 -- Part 5: Advanced Queries
